@@ -1,0 +1,11 @@
+{
+  "name": "xasiwths-bot",
+  "version": "1.0.0",
+  "description": "voulwne thes kai description",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Danikas",
+  "license": "ISC"
+}
