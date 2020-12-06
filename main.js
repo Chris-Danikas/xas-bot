@@ -115,25 +115,25 @@ bot.on('message', async message => {
     // Embed 
     // https://discord.js.org/#/docs/main/stable/class/RichEmbed
     // https://anidiots.guide/first-bot/using-embeds-in-messages
-    if (message.content.startsWith(`embed`)) {
+    // if (message.content.startsWith(`embed`)) {
 
-        // configuring the arguments
-        let args = message.content.split('-');
+    //     // configuring the arguments
+    //     let args = message.content.split('-');
 
-        if (args[1] == 'help') {
-            message.channel.send(`${prefix} embed-serverID-channelID-title-Description
-            \n g-o 598644805865832467 , gamer-chat 598644806847168697
-            \n t-s 598882399786369064 , test-channel 598891140179165359`);
-        } else {
-            const embed = new Discord.RichEmbed()
-                .setTitle(args[3])
-                .setColor(0x246ce0)
-                .setDescription(args[4])
-                .setFooter('by skipperBlyat');
+    //     if (args[1] == 'help') {
+    //         message.channel.send(`${prefix} embed-serverID-channelID-title-Description
+    //         \n g-o 598644805865832467 , gamer-chat 598644806847168697
+    //         \n t-s 598882399786369064 , test-channel 598891140179165359`);
+    //     } else {
+    //         const embed = new Discord.RichEmbed()
+    //             .setTitle(args[3])
+    //             .setColor(0x246ce0)
+    //             .setDescription(args[4])
+    //             .setFooter('by skipperBlyat');
 
-            bot.guilds.get(args[1]).channels.get(args[2]).send(embed);
-        }
-    }
+    //         bot.guilds.get(args[1]).channels.get(args[2]).send(embed);
+    //     }
+    // }
 });
 
 bot.on('message', message => {
@@ -199,7 +199,7 @@ bot.on('message', message => {
             })
             .catch(err => {
                 console.log(err);
-                message.channel.send('Sth went wrong dear gamer, send me a better message');
+                message.channel.send('Ti les mwre ... Grapse kalutero mnm');
             });
     }
 });
