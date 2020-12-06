@@ -96,35 +96,21 @@ bot.on('message', async message => {
         return;
     }
 
-    // Weather in Tyrnavos
-    if (message.content == `${prefix} ton kairo`) {
-        try {
-            message.react('😀');
-            const URL = 'https://api.openweathermap.org/data/2.5/weather?id=252848&APPID=7d8a1c597d7b9d3b30b5e42ef9fb621c&units=metric';
-            const response = await fetch(URL);
-            const json = await response.json();
-            let msg = `Weather in Tyrnavos city:
-            Temp: ${json.main.temp}, ${json.weather[0].description}
-            Perfect weather for gaming guys omg  :joy: :gun: :fire: `;
-            message.channel.send(msg);
-        } catch (err) {
-            message.channel.send(err);
-        }
-    }
-
-    // Quote of the day 
-    if (message.content == `${prefix} quote`) {
-        try {
-            message.react('😍');
-            const URL = 'http://quotes.rest/qod.json';
-            const response = await fetch(URL);
-            const json = await response.json();
-            let msg = ` Quote of the day: \n ${json.contents.quotes[0].quote}  \n   -${json.contents.quotes[0].author}`;
-            message.channel.send(msg);
-        } catch (err) {
-            console.log(err);
-        }
-    }
+    // Weather in Tyrnavos ------> volos
+    // if (message.content == `${prefix} ton kairo`) {
+    //     try {
+    //         message.react('😀');
+    //         const URL = 'https://api.openweathermap.org/data/2.5/weather?id=252848&APPID=7d8a1c597d7b9d3b30b5e42ef9fb621c&units=metric';
+    //         const response = await fetch(URL);
+    //         const json = await response.json();
+    //         let msg = `Weather in Tyrnavos city:
+    //         Temp: ${json.main.temp}, ${json.weather[0].description}
+    //         Perfect weather for gaming guys omg  :joy: :gun: :fire: `;
+    //         message.channel.send(msg);
+    //     } catch (err) {
+    //         message.channel.send(err);
+    //     }
+    // }
 
     // Embed 
     // https://discord.js.org/#/docs/main/stable/class/RichEmbed
@@ -220,7 +206,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content == `${prefix} xasiwth`) {
-        message.channel.send(`-majesto \n dick \n Who are you ? \n nice \n -set_help \n -send my avatar \n embed-help \n -send your avatar \n-memesf \n -memes-help \n -message_help\n send Twitter bot link \n -weather \n -quote \n borderlands \n gamenight \n -dogif`);
+        message.channel.send(`Eimai akoma under construction mono ta memes douleuoun \n ${prefix} memesf \n ${prefix} meme-id-text1-text2 \n${prefix} meme-id-text1-text2-channelID-serverID`);
     }
 });
 
