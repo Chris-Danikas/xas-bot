@@ -2,8 +2,8 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const UTH_URL = 'http://www.mie.uth.gr/';
 
-async function getINFO(type, message) {
-    console.log(`getting ${type} nigga`);
+async function scrap(type, message) {
+    console.log(`getting ${type}`);
 
     // Initiate puppeteer browser
     const browser = await puppeteer.launch({
@@ -58,4 +58,4 @@ async function getINFO(type, message) {
     })
 }
 
-module.exports.getINFO = getINFO;
+module.exports.scrap = scrap;

@@ -98,16 +98,15 @@ bot.on('message', async message => {
     }
 
     if (message.content == `${prefix} ta nea`) {
-        scraper.getINFO('nea', message)
-            .catch(error => console.log(error))
+        scraper.scrap('nea', message);
     }
 
     if (message.content == `${prefix} tis anakoinwseis`) {
-        scraper.getINFO('ana', message);
+        scraper.scrap('ana', message);
     }
 
     if (message.content == `${prefix} tis ekdhlwseis`) {
-        scraper.getINFO('ekd', message)
+        scraper.scrap('ekd', message);
     }
 
 });
