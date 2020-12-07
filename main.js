@@ -181,7 +181,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content == `${prefix} xasiwth`) {
-        message.channel.send(`Eimai akoma under construction mono ta memes douleuoun \n ${prefix} memesf \n ${prefix} meme-id-text1-text2 \n${prefix} meme-id-text1-text2-channelID-serverID`);
+        message.channel.send(`Eimai akoma under construction mono ta parakatw douleuoun: \n ${prefix} memesf \n ${prefix} meme-id-text1-text2 \n ${prefix} meme-id-text1-text2-channelID-serverID \n ${prefix} ta nea \n ${prefix} tis anakoinwseis \n ${prefix} tis ekdhlwseis`);
     }
 });
 
