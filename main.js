@@ -80,11 +80,34 @@ bot.on('message', message => {
         } else if (chance >= 4 && chance <= 5) {
             message.react('❤️');
         } else if (chance == 6) {
-            message.react('😍');
-        } else if (chance == 7) {
             message.react('😂');
-        } else if (chance == 8) {
-            message.react('🔫');
+        }
+    }
+
+    if (message.author.id == '258251668104151041') {
+
+        let chance = Math.floor((Math.random() * 10) + 1);
+
+        if (chance >= 1 && chance < 4) {
+            message.react('❤️');
+        }
+    }
+
+    if (message.author.id == '258648254022025217') {
+
+        let chance = Math.floor((Math.random() * 10) + 1);
+
+        if (chance >= 1 && chance < 4) {
+            message.react('💦');
+        }
+    }
+
+    if (message.author.id == '773185286367870986') {
+
+        let chance = Math.floor((Math.random() * 10) + 1);
+
+        if (chance >= 1 && chance < 4) {
+            message.react('👌');
         }
     }
 });
